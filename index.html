@@ -3,43 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Télécharger EasyFNE</title>
+    <title>EasyFNE - Téléchargement</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f8f9fa;
-            padding-top: 50px;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
+
         .container {
-            max-width: 600px;
-            margin: auto;
-            background: #ffffff;
+            width: 600px;
+            margin: 50px auto;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
             padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
-        a.download-btn {
-            display: inline-block;
-            padding: 10px 25px;
-            background: #007bff;
-            color: white;
+
+        .logos {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .logos img {
+            max-height: 70px;
+            margin: 10px;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 26px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        .btn-download {
             text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
-            transition: background 0.3s;
+            color: white;
+            background-color: #007bff;
+            padding: 12px 30px;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+            font-size: 16px;
         }
-        a.download-btn:hover {
-            background: #0056b3;
+
+        .btn-download:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            margin-top: 20px;
+            color: #aaa;
+            font-size: 12px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Télécharger EasyFNE</h1>
-        <p>La solution simple et sécurisée pour vos factures électroniques FNE.</p>
-        <a class="download-btn" href="files/EasyFNE_Setup.exe">Télécharger maintenant</a>
+
+<div class="container">
+    <div class="logos">
+        <img src="images/logoFNE.png" alt="Logo EasyFNE">
+        <img src="images/cdilogo.png" alt="Logo CDI">
     </div>
+
+    <h1>Bienvenue sur EasyFNE</h1>
+    <p>
+        Téléchargez facilement et rapidement votre application EasyFNE pour une gestion simple et sécurisée de vos factures électroniques FNE.
+    </p>
+
+    <a href="files/EasyFNE_Setup.exe" class="btn-download">
+        Télécharger maintenant
+    </a>
+
+    <footer>
+        &copy; 2025 EasyFNE - Tous droits réservés
+    </footer>
+</div>
+
 </body>
 </html>
-
